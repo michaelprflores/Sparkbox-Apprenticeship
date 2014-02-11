@@ -1,0 +1,4 @@
+Ruby has two kinds of variables.
+Local variables and Global variables.
+
+localvar and $globalvar
