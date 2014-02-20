@@ -15,10 +15,10 @@ class TriangleClassifier
 end
 
 puts TriangleClassifier.classify(5,4,3) # scalene
-puts TriangleClassifier.classify(5,5,3) # iso
-puts TriangleClassifier.classify(3,3,3) # equi
-puts TriangleClassifier.classify(5,3,5) # iso
-puts TriangleClassifier.classify(7,5,7) # iso
+puts TriangleClassifier.classify(5,5,3) # isosceles
+puts TriangleClassifier.classify(3,3,3) # equilateral
+puts TriangleClassifier.classify(5,3,5) # isosceles
+puts TriangleClassifier.classify(7,5,7) # isosceles
 puts TriangleClassifier.classify(0,5,7) # error
 puts TriangleClassifier.classify(0,0,0) # error
 

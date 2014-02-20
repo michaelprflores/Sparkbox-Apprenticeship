@@ -15,3 +15,5 @@ test = TriangleClassifier.new
 puts test.classify(5, 5, 3)
 puts test.classify(5, 5, 5)
 puts test.classify(3, 4, 5)
+puts test.classify(3, 3, 5)
+puts test.classify(5, 3, 5)
