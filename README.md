@@ -1,4 +1,4 @@
-My_Sparkbox_Apprenticeship
+An Apprenticeship at Sparkbox
 ==========================
 
-A collection of code and files from my Sparkbox Apprenticeship
+This is what I did while at Sparkbox for 6 months.
