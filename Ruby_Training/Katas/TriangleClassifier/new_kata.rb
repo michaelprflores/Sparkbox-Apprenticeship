@@ -1,7 +1,12 @@
 class TriangleKata
-	def side(a,b,c)
-		if a == b and b == c
-			
-end
+	def sides(a,b,c)
+		if a == b and b == c and c == a
+			"equilateral"
+		if a == b and b == c and c != a
+			"isosceles"
+		if a != b and b != c and c != b
+			"scalene"
+		end
+	end
 
-TriangleKata.new
+puts TriangleKata.sides.new(1, 2, 3)
