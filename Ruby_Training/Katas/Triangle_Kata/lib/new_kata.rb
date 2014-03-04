@@ -1,3 +1,5 @@
+require "trianglekata_spec"
+
 class TriangleKata
 	def sides(a,b,c)
 		if a == b and b == c and c == a

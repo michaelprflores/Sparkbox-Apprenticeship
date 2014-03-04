@@ -1,7 +1,5 @@
 class Starting
 
-
-
 def calc_age year
   if (2014 - year) <= 35
 	 return (2014 - year).to_s
@@ -11,6 +9,5 @@ def calc_age year
 	 return (2014 - year).to_s
   end
 end
-
 
 end
