@@ -8,20 +8,20 @@ require "test/unit"
 class TestPotter < MiniTest::Unit::TestCase
 
 	def setup
-		@books = Potter.new
+		@cart = Potter.new
 	end
 
-	def test_price
-		assert_equal 0, @books.price([])
+	def test_cost
+		assert_equal 0, @cart.cost([])
 	end
 
-	def test_price2
-		assert_equal 8, @books.price(["1st"])
-		assert_equal 40, @books.price(["1st", "2nd", "3rd", "4th", "5th"])
+	def test_cost2
+		assert_equal 8.00, @cart.cost(["1st"])
 	end
 
-	def test_discount_two
-		assert_equal , @books.different(["1st", "2nd", "1st"])
+	# Looking for two different books inside the cart
+	def test_different
+		assert_equal (15.20), @cart.different(["1st", "2nd", "1st"])
 	end
 
 end
