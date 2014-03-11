@@ -21,7 +21,7 @@ class TestPotter < MiniTest::Unit::TestCase
 
 	# Looking for two different books inside the cart
 	def test_different
-		assert_equal (15.20), @cart.different(["1st", "2nd", "1st"])
+		assert_equal (23.20), @cart.different(["1st", "2nd", "1st"])
 	end
 
 end
