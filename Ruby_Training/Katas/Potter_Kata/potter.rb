@@ -1,13 +1,20 @@
 class Potter
 
-	def cost(book)
+	def cost(books)
 		total = 0
-		total = book.length * 8
+		@unique_books = books.uniq
+		total = books.length * 8
+		return total
 	end
 
-# Here is an unique array and the length of it
-	def different(books)
-		total = ((books.uniq.length) * 8) * 0.95
+	def array_difference(books)
+		cost(books)
+		ret = books.dup
+		@unique_books.each do |element|
+		if index = ret.index(element)
+		ret.delete_at(index)
+		end
 	end
-
+		ret
+	end
 end
