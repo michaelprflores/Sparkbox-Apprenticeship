@@ -1,4 +1,4 @@
 My Apprenticeship at Sparkbox
 ==========================
 
-This is what I did while at Sparkbox for 6 months.
+Stuff I am working on while at Sparkbox for 6 months.
