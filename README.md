@@ -1,4 +1,5 @@
-My Apprenticeship at Sparkbox
+My Apprenticeship at [Sparkbox](www.seesparkbox.com)
 ==========================
+They call me Flores here in Dayton, Ohio. I am an illustrator and designer completing an apprenticeship to become a developer. This [apprenticeship](https://docs.google.com/a/heysparkbox.com/spreadsheet/viewform?formkey=dG9LNXU2M05MZEVnUE4teHJqeW9VSUE6MQ#gid=0) is all about leveling up in web development. This is a repo of my work and projects.
 
-Stuff I am working on while at Sparkbox for 6 months.
+![level up](http://media.giphy.com/media/qUDenOaWmXImQ/giphy.gif)
