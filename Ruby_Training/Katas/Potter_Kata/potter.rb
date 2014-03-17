@@ -3,9 +3,9 @@ class Potter
 	def cost(books)
 		array_difference(books)
 		total = 0
-			if @ret.length >= 1
-				total += 8
-			end
+		if @ret.length >= 1
+		total += 8
+		end
 		return total
 	end
 
