@@ -1,0 +1,3 @@
+describe GameOfLife do 
+	
+end
