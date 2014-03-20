@@ -1,1 +1,0 @@
-require_relative '../new_project' # Searches relative to current directory as opposed to Ruby path.
