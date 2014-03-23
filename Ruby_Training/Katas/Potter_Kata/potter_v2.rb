@@ -1,4 +1,0 @@
-class Potter
-	describe 
-
-end
