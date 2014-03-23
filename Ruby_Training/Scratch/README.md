@@ -1,0 +1,1 @@
+These are a collection of "scratch" ruby files. Essentially, they are snippets of code while following along with screencasts from treehouse, codeschool and various other code tutorials. Feel free to look around.
