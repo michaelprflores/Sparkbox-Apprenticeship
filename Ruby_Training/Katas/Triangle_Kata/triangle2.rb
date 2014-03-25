@@ -13,3 +13,8 @@ class TriangleIdentifier
 end
 
 puts TriangleIdentifier.new.kind_of_triangle(0,1,2)
+puts TriangleIdentifier.new.kind_of_triangle(2,2,2)
+puts TriangleIdentifier.new.kind_of_triangle(2,1,2)
+puts TriangleIdentifier.new.kind_of_triangle(2,2,1)
+puts TriangleIdentifier.new.kind_of_triangle(1,2,2)
+puts TriangleIdentifier.new.kind_of_triangle(1,2,3)
