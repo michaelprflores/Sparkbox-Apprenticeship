@@ -1,2 +1,3 @@
-class Cell
+class Student
+	@name = ""
 end
