@@ -8,8 +8,12 @@ describe Student do
 		student = Student.new
 		# default values
   end
+  it "has a name" do
+  	student = Student.new
+  	student.name.should eq(name)
+  	# name
+  end
 
-  # name
   # grade level
   # favorite subject
 end
