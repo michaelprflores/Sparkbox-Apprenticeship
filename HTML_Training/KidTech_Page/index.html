@@ -7,60 +7,63 @@
 </head>
 <body>
 	<header>
-		<h1>kidte.ch</h1>
-		<p><strong>A meetup of kids and parents wanting to learn more about technology.</strong></p>
+		<div class="logo">
+       <a href="" title=""><img src="img/logo.png" alt="Kidte.ch logo" /></a>
+    </div>
+		<h1 class="screen-reader-text">kidte.ch</h1>
+		<section class="intro">
+			<p>A meetup of kids and parents wanting to learn more about technology.</p>
+		</section>
  	</header>	
-	<div class ="the_money">
+	<section class="next_meetup">
 		<h1>Next Meetup</h1>
-		<div class ="">
 		<ul>
-			<li><data>April 5</data></li> <!--come back to this-->
+			<li><time datetime="2014-04-05 9:30">April 5th</time></li>
 	    <li><time>9:30 am - 11:00 am</time>
 	  </ul>
 	  <a href="">Sign Up</a>  	
-	</div>
-	<div class ="meetup_info">
+	</section>
+	<section class ="upcoming_meetup">
 		<h1>Upcoming</h1>
-		<div class ="meetup_info--month_out">
-			<ul>
-				<li><time datetime="2007-08-29T13:58Z">May 3</time></li> <!--ommitted the "rd"-->
-		    <li><time>9:30 am - 11:00 am</time>
-		  </ul>
-		  <a href="">Sign Up</a> 
-		</div>
-		<div class ="meetup_info--two_months_out">
-		    <ul>
-		  	  <li><time datetime="2007-08-29T13:58Z">June 7</time></li><!--ommitted the "th"-->
-		      <li><time>9:30 am - 11:00 am</time>
-		    </ul>
-		   <a href="">Sign Up</a> 
-		 </div>
-	</div>
-	 	<div class ="meetup_info--faq">
+			<ol class ="upcoming_meetup_list">
+				<li class ="upcoming_meetup--month_out">
+					<ul>
+						<li><time datetime="2014-05-03">May 3rd</time></li>
+			    	<li><time datetime="2014-05-3 9:30">9:30 am - 11:00 am</time>
+			  	</ul>
+			  <a href="">Sign Up</a>
+			  <li class ="upcoming_meetup--two_months_out">
+		    	<ul>
+		  	  	<li><time datetime="2014-06-07">June 7th</time></li>
+		      	<li><time datetime="2014-06-07 9:30">9:30 am - 11:00 am</time>
+		    	</ul>
+		   	<a href="">Sign Up</a>
+		  </ol>
+		 </section>
+	</section>
+	 	<section class ="meetup_info">
 	 		<div class="meetup_info--faq_one">
 	 			<h1>Who can come?</h1>
 	 			<p>Any kids who are interested in learning more about technology and how the things around them work.</p>
-	 			<div class ="notice">
 	 				<ul>
 	 					<li>Recommended Age 7 and up</li>
-	 					<li><strong>Kids must be accompanied by an adult.</strong></li>
+	 					<li><strong class="notice">Kids must be accompanied by an adult.</strong></li>
 	 				</ul>
-	 		  </div>
-	 	 </div> 
-    <div class="meetup_info--faq_two">
-			<h1>Where we meet</h1>
-			<address>Sparkbox 123 Webster Street, Suite 2 Dayton, OH 45402</address>
-			<MAP>Google Map</MAP> <!--come back to this-->
-    </div>
-    <div class="meetup_info--faq_three">
-			<h1>Where to park</h1>
-			<p>We have a lot in front of the building. We're on the second floor.</p>
-		</div>
-    <div class="meetup_info--faq_four">
-    		<h1>Lost? Call us:</h1>
-    		<p>937-401-0915</p>
-    </div>
-  </div>
+	 		</div>
+    	<div class="meetup_info--faq_two">
+				<h1>Where we meet</h1>
+				<address>Sparkbox 123 Webster Street, Suite 2 Dayton, OH 45402</address>
+				<iframe>Google Map</iframe> <!--come back to this-->
+    	</div>
+    	<div class="meetup_info--faq_three">
+				<h1>Where to park</h1>
+				<p>We have a lot in front of the building. We're on the second floor.</p>
+			</div>
+    	<div class="meetup_info--faq_four">
+    			<h1>Lost? Call us:</h1>
+    			<p>937-401-0915</p>
+    	</div>
+  </section>
     <footer>
   		<p>Keep track of us</p>
   		<ul>
