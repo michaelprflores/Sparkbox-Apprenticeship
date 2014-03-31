@@ -1,7 +1,9 @@
-# Create a school that has
-# number of students
-# name of the school
-# and an address to include city, state, zipcode.
+# Next challenge
+# I have school and I want to:
+# add 10 to 20 students, as many as I want to the school.
+# Each student should have a first name, last name, grade level.
+# I think I should create a class of students, to take in names and grades.
+# Then have the school class count how many students we have.
 
 class School
 	
