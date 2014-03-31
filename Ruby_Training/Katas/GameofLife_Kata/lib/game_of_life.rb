@@ -6,9 +6,7 @@
 class School
 	
 	def initialize
-		@name
-		@number
-		@address
+		@address = Address.new
 	end
 	
 	def name
@@ -22,7 +20,7 @@ class School
 	def street
 		@address.street
 	end
-	
+
 	def city
 		@address.city
 	end
@@ -44,7 +42,6 @@ class School
 	end
 
 	def address_of(any_street, any_city, any_state, any_zipcode)
-		@address = Address.new
 		@address.street_of(any_street)
 		@address.city_of(any_city)
 		@address.state_of(any_state)

@@ -22,6 +22,11 @@ describe School do
     school.state.should eq("Maryland")
     school.zipcode.should eq(20781)
   end
+
+  it "has a zipcode" do
+    school = School.new
+    school.zipcode
+  end
 end
 
 describe Address do
