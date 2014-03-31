@@ -1,34 +1,87 @@
-class Wrangler
+# Create a school that has
+# number of students
+# name of the school
+# and an address to include city, state, zipcode.
 
-	# New Story: School, number of students, name of the school, and an address to include city, state, zipcode.
-
+class School
+	
 	def initialize
-	# 	@color = nil
-		@top = "hard"
-		@doors = 4
+		@name
+		@number
+		@address
+	end
+	
+	def name
+		@name
 	end
 
-	def color
-		@color 
+	def number
+		@number
 	end
 
-	def top
-		@top
+	def street
+		@address.street
+	end
+	
+	def city
+		@address.city
 	end
 
-	def doors
-		@doors
+	def state
+		@address.state
 	end
 
-	def change_color(new_color)
-		@color = new_color
+	def zipcode
+		@address.zipcode
 	end
 
-	def change_top(new_top)
-		@top = new_top
+	def name_of(any_name)
+		@name = any_name
 	end
 
-	def change_door(new_doors)
-		@doors = new_doors
+	def number_of(any_number)
+		@number = any_number
+	end
+
+	def address_of(any_street, any_city, any_state, any_zipcode)
+		@address = Address.new
+		@address.street_of(any_street)
+		@address.city_of(any_city)
+		@address.state_of(any_state)
+		@address.zipcode_of(any_zipcode)
+	end
+end
+
+class Address
+	def street_of(any_street)
+		@street = any_street
+	end
+	
+	def city_of(any_city)
+		@city = any_city
+	end
+	
+	def state_of(any_state)
+		@state = any_state
+	end
+
+	def zipcode_of(any_zipcode)
+		@zipcode = any_zipcode
+	end
+
+	def street
+		@street
+	end
+
+	def city
+		@city
+	end
+
+	def state
+		@state
+	end
+
+	def zipcode
+		@zipcode
 	end
 end

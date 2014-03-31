@@ -1,49 +1,51 @@
 require 'rspec'
 require_relative '../lib/game_of_life' # game_of_life.rb
 
-describe Wrangler do
-  it "has a default color of nil" do
-    jeep = Wrangler.new
-    jeep.color.should eq(nil)
+describe School do
+  it "has a name" do
+    school = School.new
+    school.name_of("DeMatha")
+    school.name.should eq("DeMatha")
   end
 
-  it "has a default top of hard" do
-    jeep = Wrangler.new
-    jeep.top.should eq("hard")
+  it "has any number of students" do
+    school = School.new
+    school.number_of(1000)
+    school.number.should eq(1000)
   end
 
-  it "has a default doors to 4 doors" do
-    jeep = Wrangler.new
-    jeep.doors.should eq(4)
+  it "has an address with city, state, and zipcode" do
+    school = School.new
+    school.address_of("8th","Hyattsville", "Maryland", 20781)
+    school.street.should eq("8th")
+    school.city.should eq("Hyattsville")
+    school.state.should eq("Maryland")
+    school.zipcode.should eq(20781)
+  end
+end
+
+describe Address do
+  it "has a street" do
+    address = Address.new
+    address.street_of("8th")
+    address.street.should eq("8th")
   end
 
-  it "can have the color blue" do
-    jeep = Wrangler.new
-    jeep.change_color("blue")
-    jeep.color.should eq("blue")
+  it "has a city" do
+    address = Address.new
+    address.city_of("Orlando")
+    address.city.should eq("Orlando")
   end
 
-  it "can have a hard top" do
-    jeep = Wrangler.new
-    jeep.change_top("hard")
-    jeep.top.should eq("hard")
+  it "has a state" do
+    address = Address.new
+    address.state_of("Florida")
+    address.state.should eq("Florida")
   end
 
-  it "can have a soft top" do
-    jeep = Wrangler.new
-    jeep.change_top("soft")
-    jeep.top.should eq("soft")
-  end
-
-  it "can have 2 doors" do
-    jeep = Wrangler.new
-    jeep.change_door(2)
-    jeep.doors.should eq(2)
-  end
-
-   it "can have 4 doors" do
-    jeep = Wrangler.new
-    jeep.change_door(4)
-    jeep.doors.should eq(4)
+  it "has a zipcode" do
+    address = Address.new
+    address.zipcode_of(32836)
+    address.zipcode.should eq(32836)
   end
 end
