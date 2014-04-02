@@ -4,6 +4,31 @@
 # Each student should have a first name, last name, grade level.
 # I think I should create a class of students, to take in names and grades.
 # Then have the school class count how many students we have.
+class Student
+	def first_name
+		@firstname
+	end
+
+	def last_name
+		@lastname
+	end
+
+	def grade_level
+		@gradelevel
+	end
+
+	def first_name_of(first_name)
+		@firstname = first_name
+	end
+
+	def last_name_of(last_name)
+		@lastname = last_name
+	end
+
+	def grade_level_of(any)
+		@gradelevel =  any
+	end
+end
 
 class School
 	
