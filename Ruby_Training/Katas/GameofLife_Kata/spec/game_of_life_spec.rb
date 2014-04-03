@@ -1,6 +1,26 @@
 require 'rspec'
 require_relative '../lib/game_of_life' # game_of_life.rb
 
+describe Student do
+  it "has a first name" do
+    student = Student.new
+    student.first_name_of("Bruce")
+    student.first_name.should eq("Bruce")
+  end
+
+  it "has a last name" do
+    student = Student.new
+    student.last_name_of("Wayne")
+    student.last_name.should eq("Wayne")
+  end
+
+  it "has a grade level" do
+    student = Student.new
+    student.grade_level_of(11)
+    student.grade_level.should eq(11)
+  end
+end
+
 describe School do
   it "has a name" do
     school = School.new
