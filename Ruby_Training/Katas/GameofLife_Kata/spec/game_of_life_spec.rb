@@ -28,12 +28,10 @@ describe School do
     school.name.should eq("DeMatha")
   end
 
-  it "has a student" do
+  it "has any number of students" do
     school = School.new
-    school.first_student("Bruce", "Wayne", 11)
-    school.first_name.should eq("Bruce")
-    school.last_name.should eq("Wayne")
-    school.grade_level.should eq(11)
+    school.number_of(1000)
+    school.number.should eq(1000)
   end
 
   it "has an address with city, state, and zipcode" do
@@ -43,6 +41,11 @@ describe School do
     school.city.should eq("Hyattsville")
     school.state.should eq("Maryland")
     school.zipcode.should eq(20781)
+  end
+
+  it "has a zipcode" do
+    school = School.new
+    school.zipcode
   end
 end
 
