@@ -78,6 +78,11 @@ class School
   def enroll(a_student)
     @students.push(a_student)
   end
+
+  def print_roster
+    
+    puts student.first_name
+  end
 end
 
 class Address

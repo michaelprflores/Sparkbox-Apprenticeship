@@ -21,17 +21,6 @@ describe Student do
   end
 end
 
-# describe "lists of strings" do
-#   it "ansfkajsnfasnf" do
-#     names = Array.new
-#     names.push("Mike")
-#     names.push("Divya")
-#     puts names
-#     names.push("Ryan")
-#     puts names
-#   end
-# end
-
 describe School do
   it "has a name" do
     school = School.new
@@ -44,6 +33,13 @@ describe School do
     school.enroll Student.new
     school.enroll Student.new
     school.number_of.should eq(2)
+  end
+
+  it "prints a roster" do
+    school = School.new
+    school.enroll Student.new
+    school.enroll Student.new
+    school.print_roster
   end
 
   it "has an address with city, state, and zipcode" do
