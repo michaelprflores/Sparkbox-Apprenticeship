@@ -1,0 +1,116 @@
+/* ===== ===== ===== ===== =====
+Sparkbox Apprentice Page
+written for - www.seesparkbox.com
+===== ===== ===== ===== ===== */
+
+/* Resets and Overrides */
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* ----- end ----- */
+
+/* header */
+
+header {
+    background-color: rgb(205, 245, 220);
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    padding: 50px;
+}
+
+header > .logo {
+    padding: 50px;
+}
+
+.logo img {
+    width: 101px;
+    height: 111px;
+}
+
+h1 {
+    padding: 50px;
+}
+
+.slogan li {
+    padding: 20px;
+}
+
+.hr{
+    position: relative;
+}
+
+.hr:before {
+    border: 0;
+    width: 2%;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    top: 3.5em;
+    left: 50%;
+    margin-left:-1%;
+    content: "";
+}
+
+/* ----- end ----- */
+
+/* article */
+
+article {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+/* ----- end ----- */
+
+/* aside */
+
+aside {
+    width: 100%;
+}
+.third-group {
+    background-color: rgb(248, 240, 180);
+    padding: 50px;
+
+}
+
+.second-group {
+    background-color: rgb(250, 200, 161);
+    padding: 50px;
+
+}
+
+.first-group {
+    background-color: rgb(199, 225, 233);
+    padding: 50px;
+}
+
+/* ----- end ----- */
+
+/* footer */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    padding: 25px 50px;
+}
+
+footer > .logo img {
+    width: 50.5px;
+    height: 55.5px;
+    padding: 25px;
+}
+
+/* ----- end ----- */

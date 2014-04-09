@@ -3,14 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <title>Sparkbox Apprenticeships</title>
-  <!-- <link rel="stylesheet" type="text/css" href="media/css/style.css" />  -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Sparkbox Apprenticeships</h1>
-    <p><strong>Expect to be challenged. Expect high expectations. Expect to be hit with a few Nerf darts.</strong></p>
+    <div class="head">
+        <div class="logo">
+          <a href="http://www.seesparkbox.com" title="Sparkbox logo"><img src="img/logo.png" alt="Sparkbox logo" /></a>
+        </div>
+        <h1>Apprenticeships at Sparkbox</h1>
+        <ul class="slogan">
+          <li class="slogan-item hr">Expect to be challenged.</li>
+          <li class="slogan-item hr">Expect high expectations.</li>
+          <li class="slogan-item">Expect to be hit with a few Nerf darts.</li>
+        </ul>
+    </div>
   </header> 
-  <article>
+  <article> <!-- revisit in docs -->
     <p>Sparkbox is a team that values education. We offer paid apprenticeships because we love what we do, we want to share with new talent, and we genuinely care about the future of the web.</p>
     <h2>What We Look For</h2>
     <p>We build responsive, standards-compliant, content-focused, well-crafted, accessible, valuable, beautiful web sites and apps, and we're looking for some web geeks that want to do the same.</p>
@@ -18,10 +27,11 @@
     <p>We&rsquo;re looking primarily for those interested in an apprenticeship in web development &mdash; frontend, backend, or anything code related. What we&rsquo;re looking for most, however, are individuals that are excited to make their mark on the web industry. In your application, provide anything and everything you can that will convince us you are that geek.</p>
     <a href="apply.html">Learn More &amp; Apply</a>
   </article>
-  <aside>
-    <h2>Our Apprentices</h2>
-    <div>
-      <h3>v3.0-Currently Active</h3>
+  <section>
+    <h1>Our Apprentices</h1>
+    <div class="version-3">
+      <h2>Version 3.0</h2> <!-- span wraps the 3.0, a class big number or background text -->
+      <h2>v3.0-Currently Active</h3>
       <div>
         <img src="" alt="Michael Flores" />
         <h4>Michael Flores</h4>
@@ -44,8 +54,8 @@
           <li><a href="">Sparkbox Apprenticeships Site v3.0</a></li>
         </ul>
       </div>
-    </div>
-    <div>
+    </section>
+    <div class="second-group">
       <h3>v2.0</h3>
       <div>
         <img src="" alt="Eddie Bonk" />
@@ -82,7 +92,7 @@
         </ul>
       </div>  
     </div>
-    <div>
+    <div class="">
       <h3>v1.0</h3>
       <div class="profile">
         <img src="" alt="Linnie Jupe" />
@@ -103,7 +113,10 @@
         <p>went on to work at <a href="www.seesparkbox.com">Sparkbox</a>
       </div>
     </div>
-  </aside>
-  <footer><p>Proudly built by <a href="www.seesparkbox.com">Sparkbox</a> apprentices v3.0</p></footer>
+  </section>
+  <footer>
+    <div class="logo"><a href="http://www.seesparkbox.com" title="Sparkbox logo"><img src="img/logo.png" alt="Sparkbox logo" /></a></div>
+    <p>Proudly built by <a href="www.seesparkbox.com">Sparkbox</a> apprentices v3.0</p>
+  </footer>
 </body>
 </html>
