@@ -1,5 +1,8 @@
 Flores' Checklist for Drew, Harr and Ben.
 
+madebyflores profile on [treehouse][] & [code school][]
+
+
 ### Phase 1: Source Control and Programming Basics
 
 **Reading:**
@@ -29,7 +32,7 @@ Flores' Checklist for Drew, Harr and Ben.
 * [Ruby Warriors][] ✓ *tried it and got to level 3*
 * Game of Life - Refactor: implement changes discussed in review
 * Book Reviews - add to weekly journal (all books asigned above). 100-200 words with a brief summary and your biggest applicable takeaway.
-* [Treehouse Ruby Foundations][] ✓
+* [Treehouse: Ruby Foundations][] ✓
 
 **Additional Resources:**
 
@@ -59,17 +62,17 @@ Flores' Checklist for Drew, Harr and Ben.
 **Training:**
 
 * Introduction to frontend project
-* [CodeSchool: Functional HTML5 & CSS3][]
-* [CodeSchool: HTML5 & CSS3 Updates Screencast][]
-* [CodeSchool: CSS Cross-Country][]
+* [Treehouse: HTML][] ✓
+* [Treehouse: CSS Foundations][] ✓
+* [CodeSchool: CSS Cross-Country][] ✓
 * Frontend project style prototype review
-* Frontend project HTML review
+* Frontend project HTML review ✓
 * Frontend project CSS review
-* [CodeSchool: Assembling Sass][]
+* [CodeSchool: Assembling Sass][] ✓
 * [CodeSchool: Assembling Sass Part 2][]
 * Introduction to Compass
 * Frontend project Sass review (CSS to be rewritten)
-* [CodeSchool: Journey Into Mobile][]
+* [CodeSchool: Journey Into Mobile][] ✓
 * Frontend project RWD practices review (CSS to be rewritten)
 * [CodeAcademy: Introduction to JavaScript][]
 * Introduction to Jasmine
@@ -145,8 +148,8 @@ Flores' Checklist for Drew, Harr and Ben.
 [CodeSchool: Rails for Zombies 1 (Redux)]: http://www.codeschool.com/courses/rails-for-zombies-redux
 [CodeSchool: Rails for Zombies 2]: http://www.codeschool.com/courses/rails-for-zombies-2
 [CodeSchool: Rails Testing for Zombies]: http://www.codeschool.com/courses/rails-testing-for-zombies
-[CodeSchool: Functional HTML5 & CSS3]: https://www.codeschool.com/courses/functional-html5-css3
-[CodeSchool: HTML5 & CSS3 Updates Screencast]: https://www.codeschool.com/code_tv/html5-css3-updates
+[Treehouse: HTML]: http://teamtreehouse.com/library/html
+[Treehouse: CSS Foundations]: http://teamtreehouse.com/library/css-foundations
 [CodeSchool: CSS Cross-Country]: https://www.codeschool.com/courses/css-cross-country
 [CodeSchool: Assembling Sass]: https://www.codeschool.com/courses/assembling-sass
 [CodeSchool: Assembling Sass Part 2]: https://www.codeschool.com/courses/assembling-sass-part-2
@@ -165,3 +168,6 @@ Flores' Checklist for Drew, Harr and Ben.
 [TryJasmine]: http://tryjasmine.com/
 [welldone]: http://media.giphy.com/media/LmpHsHFG1ZoRy/giphy.gif
 [Book of Ruby]: http://www.nostarch.com/ruby
+[treehouse]: http://www.teamtreehouse.com/madebyflores
+[code school]: https://www.codeschool.com/users/madebyflores
+[Treehouse: Ruby Foundations]: http://teamtreehouse.com/library/ruby-foundations
