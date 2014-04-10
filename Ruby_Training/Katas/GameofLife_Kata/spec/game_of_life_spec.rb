@@ -37,8 +37,16 @@ describe School do
 
   it "prints a roster" do
     school = School.new
-    school.enroll Student.new
-    school.enroll Student.new
+    student1 = Student.new
+    student1.first_name_of("Jim")
+    student1.last_name_of("Thorpe")
+    student1.grade_level_of(11)
+    student2 = Student.new
+    student2.first_name_of("Gordon")
+    student2.last_name_of("Brown")
+    student2.grade_level_of(12)
+    school.enroll student1
+    school.enroll student2
     school.print_roster
   end
 

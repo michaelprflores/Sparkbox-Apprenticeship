@@ -80,8 +80,11 @@ class School
   end
 
   def print_roster
-    
-    puts student.first_name
+    @students.each do |student| 
+      puts student.first_name
+      puts student.last_name
+      puts student.grade_level 
+    end
   end
 end
 
