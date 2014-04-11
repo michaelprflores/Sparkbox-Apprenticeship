@@ -18,7 +18,7 @@ li {
     list-style-type: none;
 }
 
-/* ----- end ----- */
+/* end */
 
 /* header */
 
@@ -65,7 +65,7 @@ h1 {
     content: "";
 }
 
-/* ----- end ----- */
+/* end */
 
 /* article */
 
@@ -74,31 +74,30 @@ article {
     padding: 50px;
 }
 
-/* ----- end ----- */
+/* end */
 
 /* aside */
 
-aside {
+section {
     width: 100%;
 }
-.third-group {
+
+.version-3 {
     background-color: rgb(248, 240, 180);
     padding: 50px;
-
 }
 
-.second-group {
+.version-2 {
     background-color: rgb(250, 200, 161);
     padding: 50px;
-
 }
 
-.first-group {
+.version-1 {
     background-color: rgb(199, 225, 233);
     padding: 50px;
 }
 
-/* ----- end ----- */
+/* end */
 
 /* footer */
 
@@ -110,7 +109,8 @@ footer {
 footer > .logo img {
     width: 50.5px;
     height: 55.5px;
-    padding: 25px;
 }
 
-/* ----- end ----- */
+/* end */
+
+/* Review notes - Friday, April 11, 2014: ;
