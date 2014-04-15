@@ -1,7 +1,21 @@
-/* ===== ===== ===== ===== =====
+/*
 Sparkbox Apprentice Page
 written for - www.seesparkbox.com
-===== ===== ===== ===== ===== */
+*/
+
+/* Fonts */
+/* Knockout 26, Junior Flyweight from cloud.typography.com */
+/* {
+    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
+    font-weight: 400;
+    font-style: normal;
+} */
+/* Knockout 94, Ultimate Sumo  from cloud.typography.com */
+/* {
+    font-family: 'Knockout 94 A', 'Knockout 94 B';
+    font-weight: 400;
+    font-style: normal;
+} */
 
 /* Resets and Overrides */
 
@@ -37,19 +51,15 @@ header > .logo {
 }
 
 .logo img {
-    width: 101px;
-    height: 111px;
-}
-
-h1 {
-    padding: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .slogan li {
     padding: 20px;
 }
 
-.hr{
+.hr {
     position: relative;
 }
 
@@ -65,18 +75,37 @@ h1 {
     content: "";
 }
 
+h1.Page-Title {
+    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
+    font-size: 12em;
+    font-weight: 400;
+    font-style: normal;
+    text-transform:uppercase;
+    padding: 50px;
+}
+
+h1.Page-Title span {
+    display: block;
+    line-height: 80%;
+}
+
+.slogan {
+    font-family: 'Bodoni W01 Book 709611', 'Times New Roman';
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+}
 /* end */
 
 /* article */
 
 article {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); /* check for fall back color hex code */
     padding: 50px;
 }
 
 /* end */
 
-/* aside */
+/* section */
 
 section {
     width: 100%;
@@ -107,10 +136,10 @@ footer {
 }
 
 footer > .logo img {
-    width: 50.5px;
-    height: 55.5px;
+    width: 50px;
+    height: 50px;
 }
 
 /* end */
 
-/* Review notes - Friday, April 11, 2014: ;
+/* Review notes - Friday, April 11, 2014: look into "display inline block" version-3-theme or content-band--color.
