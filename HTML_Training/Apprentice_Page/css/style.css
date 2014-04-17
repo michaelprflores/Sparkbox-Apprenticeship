@@ -23,13 +23,21 @@ written for - www.seesparkbox.com
     padding:0;
     margin:0;
 }
-
-body {
+html, body {
+    font-size: 16px;
     text-align: center;
 }
 
 li {
     list-style-type: none;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+a:visited {
+    color: #000;
 }
 
 /* end */
@@ -43,7 +51,7 @@ header {
 }
 
 .head {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 header > .logo {
@@ -51,8 +59,9 @@ header > .logo {
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width:auto;
+    max-width:100%;
+    height:auto;
 }
 
 .slogan li {
@@ -75,32 +84,72 @@ header > .logo {
     content: "";
 }
 
-h1.Page-Title {
-    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
-    font-size: 12em;
-    font-weight: 400;
-    font-style: normal;
-    text-transform:uppercase;
-    padding: 50px;
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-top: -20px;
 }
 
-h1.Page-Title span {
-    display: block;
+h1.page-title {
+    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7.3em;
     line-height: 80%;
+    text-align: center;
+    margin: 10 auto;
+    padding: 10px;
+    text-transform:uppercase;
 }
 
 .slogan {
     font-family: 'Bodoni W01 Book 709611', 'Times New Roman';
     letter-spacing: 0.175em;
     text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: -35px;
 }
 /* end */
 
-/* article */
+/* section */
 
-article {
+section.information {
     background-color: rgb(255, 255, 255); /* check for fall back color hex code */
-    padding: 50px;
+}
+
+p.about-company {
+    font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
+    font-size: 1.5em;
+}
+
+.information h1 {
+    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    margin: 30px auto;
+    letter-spacing: .075em;
+}
+
+
+
+section p {
+    font-family:"Bodoni W01 Book 709611";
+    margin: 1em;
+}
+
+section > a {
+    background-color: #000000;
+    color: white;
+    font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
+    text-decoration: none;
+    padding: 1.2em 2.1em;
+    display: block;
+    width: 12em;
+    margin: 40px auto;
+    border-radius: 0.3em;
 }
 
 /* end */
@@ -109,30 +158,135 @@ article {
 
 section {
     width: 100%;
+    margin: 2em auto;
+}
+
+.version {
+    margin-bottom: -0.3em;
+}
+
+.version-title {
+    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: .075em;
+    display: block;
+    padding: 1em 0 1em;
+}
+.version-number {
+    color: #FFF;
+    font-family: 'Knockout 94 A', 'Knockout 94 B';
+    font-weight: 400;
+    font-size: 12em;
+    font-style: normal;
+    display: block;
+    margin: -0.4em auto -0.4em;
+}
+
+h3 {
+    padding-top: 1em;
+    position: relative;
+}
+
+
+.version h3:before {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #FFF;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.version img {
+    margin-bottom: -0.3em;
+}
+.version-current {
+    font-family:"Bodoni W01 Bold Italic 709608";
+    font-size: 2.9em;
+    margin-top: -1.35em;
+    position: absolute;
+    left: 50%;
+    margin-left: -6em;
+    width: 11.75em;
+}
+
+.version-profile-name {
+    font-family: 'Knockout 94 A', 'Knockout 94 B';
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.version-project {
+    font-family:"Bodoni W01 Book 709611";
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.version-project-titles {
+    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.version-job {
+    font-family:"Bodoni W01 Bold Italic 709608";
+    font-size: 1em;
+}
+
+.version-job a {
+    color: #000;
 }
 
 .version-3 {
     background-color: rgb(248, 240, 180);
-    padding: 50px;
 }
 
 .version-2 {
     background-color: rgb(250, 200, 161);
-    padding: 50px;
 }
 
 .version-1 {
     background-color: rgb(199, 225, 233);
-    padding: 50px;
+
 }
 
 /* end */
+
+/* social icons */
+
+.apprentices-listing--links-item {
+    display: inline-block;
+    margin: 0.8em 0.3em;
+}
+
+.apprentices-listing--links-item i {
+    color: #000;
+    background-color: #FFF;
+    border-radius: 50%;
+    text-decoration: none;
+}
 
 /* footer */
 
 footer {
     background-color: rgb(255, 255, 255);
     padding: 25px 50px;
+}
+
+footer p {
+    font-family:"Bodoni W01 Book 709611";
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 1em;
 }
 
 footer > .logo img {
