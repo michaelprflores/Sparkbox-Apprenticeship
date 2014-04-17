@@ -192,7 +192,7 @@ section {
 }
 
 h3 {
-    padding-top: 1em;
+    padding-top: 0.7em;
     position: relative;
 }
 
@@ -254,18 +254,15 @@ h3 {
 
 .version-3 {
     background-color: rgb(248, 240, 180);
-    padding-bottom: 1em;
 }
 
 .version-2 {
     background-color: rgb(250, 200, 161);
-    padding-bottom: 1em;
 }
 
 .version-1 {
     background-color: rgb(199, 225, 233);
-    padding-bottom: 1em;
-
+    padding-bottom: 3em;
 }
 
 /* end */
@@ -306,3 +303,5 @@ footer > .logo img {
 }
 
 /* end */
+
+/* Think thru the modularity of the class names and maintainable names. We can get away with content driven class names for now funtion of the content */
