@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../lib/game_of_life' # game_of_life.rb
+require_relative '../lib/school' # school.rb
 
 describe Student do
   it "has a first name" do
