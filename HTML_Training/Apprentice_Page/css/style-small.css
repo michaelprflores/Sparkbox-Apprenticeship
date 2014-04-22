@@ -1,4 +1,4 @@
-/*@media (min-width: 560px) {
+/* @media (min-width: 560px) {
     h1.Page-Title {
         font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
         font-size: 12em;
@@ -13,4 +13,11 @@
         letter-spacing: 0.175em;
         text-transform: uppercase;
     }
-}*/
+} */
+
+/*
+
+read the css docs on media queries, don't apply this css until I reach this minimum width, continue applying this css until I hit a max-width.
+breakpoints are determined by whether things break and how it looks visually i.e. font-size  when the screen is bigger, doesn't need to be in a separate file.
+
+*/
