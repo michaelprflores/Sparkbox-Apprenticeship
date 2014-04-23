@@ -3,19 +3,7 @@ Sparkbox Apprentice Page
 written for - www.seesparkbox.com
 */
 
-/* Fonts */
-/* Knockout 26, Junior Flyweight from cloud.typography.com */
-/* {
-    font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
-    font-weight: 400;
-    font-style: normal;
-} */
-/* Knockout 94, Ultimate Sumo  from cloud.typography.com */
-/* {
-    font-family: 'Knockout 94 A', 'Knockout 94 B';
-    font-weight: 400;
-    font-style: normal;
-} */
+/* Version 2 is based on a 240px width instead of 400px */
 
 /* Resets and Overrides */
 
@@ -69,31 +57,10 @@ header {
     height:auto;
 } */
 
-.slogan li {
-    padding: 20px;
-}
-
-.hr {
-    position: relative;
-}
-
-.hr:before {
-    border: 0;
-    width: 2%;
-    height: 1px;
-    background: #333;
-    position: absolute;
-    top: 3.5em;
-    left: 50%;
-    margin-left:-1%;
-    content: "";
-}
-
 .logo img {
     width: 30%;
     height: 100%;
-    margin-bottom: 5px;
-    margin-top: -20px;
+    margin-bottom: 1em;
 }
 
 h1.page-title {
@@ -103,9 +70,9 @@ h1.page-title {
     font-size: 3.3em;
     line-height: 80%;
     text-align: center;
-    margin: 0.625em auto;
-    padding: 0.625em;
-    text-transform:uppercase;
+    margin: 0.2em auto 0.2em auto;
+    padding-bottom: 0.2em;
+    text-transform: uppercase;
     max-width: 16.438em;
 }
 
@@ -116,17 +83,38 @@ h1.page-title {
     margin-top: 10px;
     margin-bottom: -35px;
 }
+
+.slogan li {
+    padding: 20px;
+}
+
+.hr {
+    position: relative;
+}
+
+.hr:before {
+    border: 0;
+    width: 5%;
+    height: 1px;
+    background: #333;
+    position: absolute;
+    top: 4.5em;
+    left: 50%;
+    margin-left:-3%;
+    content: "";
+}
+
 /* end */
 
-/* section */
-
-section.information {
-    background-color: rgb(255, 255, 255); /* check for fall back color hex code */
-}
+/* section "What We Look For" */
 
 p.about-company {
     font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+
+section.information {
+    background-color: rgb(255, 255, 255); /* check for fall back color hex code */
 }
 
 .information h1 {
@@ -135,11 +123,9 @@ p.about-company {
     font-style: normal;
     font-size: 2.3em;
     text-transform: uppercase;
-    margin: 30px auto;
+    margin: 0 auto;
     letter-spacing: .075em;
 }
-
-
 
 section p {
     font-family:"Bodoni W01 Book 709611";
@@ -153,14 +139,14 @@ section > a {
     text-decoration: none;
     padding: 1.2em 2.1em;
     display: block;
-    width: 12em;
+    width: 40%;
     margin: 40px auto;
     border-radius: 0.3em;
 }
 
 /* end */
 
-/* section */
+/* section "Versions" */
 
 section {
     width: 100%;
@@ -186,14 +172,21 @@ section {
     color: #FFF;
     font-family: 'Knockout 94 A', 'Knockout 94 B';
     font-weight: 400;
-    font-size: 12em;
+    font-size: 7em;
     font-style: normal;
     display: block;
     margin: -0.4em auto -0.4em;
 }
 
+.version-current {
+    font-family:"Bodoni W01 Bold Italic 709608";
+    font-size: 2.2em;
+    margin-top: -2.15em;
+    text-align: center;
+}
+
 h3 {
-    padding-top: 0.7em;
+    padding-top: 0.4em;
     position: relative;
 }
 
@@ -209,15 +202,6 @@ h3 {
 
 .version img {
     margin-bottom: -0.3em;
-}
-.version-current {
-    font-family:"Bodoni W01 Bold Italic 709608";
-    font-size: 2.9em;
-    margin-top: -1.35em;
-    position: absolute;
-    left: 50%;
-    margin-left: -6em;
-    width: 11.75em;
 }
 
 .version-profile-name {
@@ -237,10 +221,11 @@ h3 {
     font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
     font-weight: 400;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2.7em;
     text-decoration: underline;
     text-transform: uppercase;
     color: #000;
+    line-height: 1em;
     padding: 0.5em 0 1em 0;
 }
 
@@ -306,6 +291,37 @@ footer > .logo img {
 /* end */
 
 /* media queries */
+
+@media (min-width: 326px) {
+    .logo img {
+        width: 6.750em;
+    }
+
+    h1.page-title {
+        font-size: 6em;
+    }
+
+    .hr:before {
+        width: 2.5%;
+        top: 3.5em;
+    }
+}
+
+@media (min-width: 360px) {
+    h1.page-title {
+        width: 3.5em;
+        /*width: 360px;*/
+    }
+}
+/* h1.page-title {
+    margin: 0.625em auto;
+    padding: 0.625em;
+}
+
+.information h1 {
+        margin: 1.375em auto; maybe needs to be a percentage
+} */
+
 /* end */
 
 /* Think thru the modularity of the class names and maintainable names. We can get away with content driven class names for now funtion of the content */
