@@ -1,5 +1,7 @@
 require 'rspec'
-require_relative '../lib/project_2' # project_2.rb
+require_relative '../lib/attendee' # attendee.rb
+require_relative '../lub/meetup' # meetup.rb
+require_relative '../lub/printing' # printing.rb
 
 describe Attendee do
   it "has a first name" do

@@ -1,11 +1,21 @@
 /*
 Sparkbox Apprentice Page
 written for - www.seesparkbox.com
+Version 2 is based on a 240px width instead of 400px
 */
 
-/* Version 2 is based on a 240px width instead of 400px */
+/*
+Contents
+1. Resets & Overrides
+2. Header
+3. Information
+4. Versions
+5. Social Links
+6. Footer
+7. Media Queries
+*/
 
-/* Resets and Overrides */
+/* 1. Resets & Overrides */
 
 * {
     padding:0;
@@ -29,13 +39,17 @@ a {
     text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
     color: #000;
+} */
+
+strong {
+    font-weight: normal;
 }
 
 /* end */
 
-/* header */
+/* Header */
 
 header {
     background-color: rgb(205, 245, 220);
@@ -47,16 +61,6 @@ header {
     padding: 50px 0;
 }
 
-/* header > .logo {
-    padding: 50px;
-} */
-
-/* .logo img {
-    width:auto;
-    max-width:100%;
-    height:auto;
-} */
-
 .logo img {
     width: 30%;
     height: 100%;
@@ -67,7 +71,7 @@ h1.page-title {
     font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
     font-weight: 400;
     font-style: normal;
-    font-size: 3.3em;
+    font-size: 4.3em;
     line-height: 80%;
     text-align: center;
     margin: 0.2em auto 0.2em auto;
@@ -106,18 +110,18 @@ h1.page-title {
 
 /* end */
 
-/* section "What We Look For" */
+/* 3. Information */
 
-p.about-company {
+p.info-description {
     font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
     font-size: 1.3em;
 }
 
-section.information {
+section.info {
     background-color: rgb(255, 255, 255); /* check for fall back color hex code */
 }
 
-.information h1 {
+.info h1 {
     font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
     font-weight: 400;
     font-style: normal;
@@ -133,9 +137,9 @@ section p {
 }
 
 section > a {
-    background-color: #000000;
-    color: white;
-    font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
+    background-color: #000;
+    color: #FFF;
+    font-family: "Bodoni W01 Bold Italic 709608", 'Times New Roman';
     text-decoration: none;
     padding: 1.2em 2.1em;
     display: block;
@@ -146,7 +150,7 @@ section > a {
 
 /* end */
 
-/* section "Versions" */
+/* 4. Versions */
 
 section {
     width: 100%;
@@ -157,7 +161,7 @@ section {
     margin-bottom: -0.3em;
 }
 
-.version-title {
+.version-heading {
     font-family: 'Knockout 26 A', 'Knockout 26 B', 'Arial','Sans-Serif';
     font-weight: 400;
     font-style: normal;
@@ -168,20 +172,21 @@ section {
     display: block;
     padding: 1em 0 1em;
 }
+
 .version-number {
     color: #FFF;
-    font-family: 'Knockout 94 A', 'Knockout 94 B';
+    font-family: 'Knockout 94 A', 'Knockout 94 B', 'Arial', 'Sans-Serif';
     font-weight: 400;
-    font-size: 7em;
+    font-size: 3em;
     font-style: normal;
     display: block;
-    margin: -0.4em auto -0.4em;
+    margin: -0.3em auto -0.5em;
 }
 
 .version-current {
     font-family:"Bodoni W01 Bold Italic 709608";
     font-size: 2.2em;
-    margin-top: -2.15em;
+    margin-top: -1.85em;
     text-align: center;
 }
 
@@ -189,7 +194,6 @@ h3 {
     padding-top: 0.4em;
     position: relative;
 }
-
 
 .version h3:before {
     content: "";
@@ -232,6 +236,7 @@ h3 {
 .version-job {
     font-family:"Bodoni W01 Bold Italic 709608";
     font-size: 1em;
+    text-align: center;
 }
 
 .version-job a {
@@ -253,21 +258,21 @@ h3 {
 
 /* end */
 
-/* social icons */
+/* 5. Social Links */
 
-.apprentices-listing--links-item {
+.version-profile-social--links-item {
     display: inline-block;
     margin: 0.8em 0.3em;
 }
 
-.apprentices-listing--links-item i {
+.version-profile-social--links-item i {
     color: #000;
     background-color: #FFF;
     border-radius: 50%;
     text-decoration: none;
 }
 
-/* footer */
+/* 6. Footer */
 
 footer {
     background-color: rgb(255, 255, 255);
@@ -276,7 +281,7 @@ footer {
 
 footer p {
     font-family:"Bodoni W01 Book 709611";
-    font-size: 0.8em;
+    font-size: 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 1em;
@@ -290,15 +295,15 @@ footer > .logo img {
 
 /* end */
 
-/* media queries */
+/* 7. Media Queries */
 
-@media (min-width: 326px) {
+@media (min-width: 289px) {
     .logo img {
         width: 6.750em;
     }
 
     h1.page-title {
-        font-size: 6em;
+        font-size: 4.8em;
     }
 
     .hr:before {
@@ -309,18 +314,40 @@ footer > .logo img {
 
 @media (min-width: 360px) {
     h1.page-title {
-        width: 3.5em;
-        /*width: 360px;*/
+        font-size: 6.8em;
+        width: 360px;
     }
-}
-/* h1.page-title {
-    margin: 0.625em auto;
-    padding: 0.625em;
+
+    section > a {
+        width: 160px;
+    }    
 }
 
-.information h1 {
-        margin: 1.375em auto; maybe needs to be a percentage
-} */
+@media (min-width: 515px) {
+
+    h1.page-title {
+        width: 5.5em;
+    }
+
+    .info-description {
+        text-align: center;
+    }
+
+    section p {
+        width: 483px;
+        margin: 0 auto;
+        padding: 1em 0;
+        text-align: left;
+        line-height: 1.5em;
+    }
+
+    .version-number {
+        font-size: 5em;
+    }
+    .version-current {
+        margin-top: -2em;
+    }
+}
 
 /* end */
 
