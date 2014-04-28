@@ -46,8 +46,8 @@ madebyflores profile on [treehouse][] & [code school][]
 
 **Reading:**
 
-* [HTML5 for Web Designers][], Jeremy Keith
-* [CSS3 for Web Designers][], Dan Cederholm
+* [HTML5 for Web Designers][], Jeremy Keith ✓
+* [CSS3 for Web Designers][], Dan Cederholm ✓
 * [Responsive Web Design][], Ethan Marcotte
 * [Mobile First][], Luke Wroblewski
 * [Design is a Job][], Mike Monteiro
@@ -68,8 +68,9 @@ madebyflores profile on [treehouse][] & [code school][]
 * Frontend project style prototype review
 * Frontend project HTML review ✓
 * Frontend project CSS review
+* [Treehouse: Sass Basics][] ✓
 * [CodeSchool: Assembling Sass][] ✓
-* [CodeSchool: Assembling Sass Part 2][]
+* [CodeSchool: Assembling Sass Part 2][] ✓
 * Introduction to Compass
 * Frontend project Sass review (CSS to be rewritten)
 * [CodeSchool: Journey Into Mobile][] ✓
@@ -171,3 +172,4 @@ madebyflores profile on [treehouse][] & [code school][]
 [treehouse]: http://www.teamtreehouse.com/madebyflores
 [code school]: https://www.codeschool.com/users/madebyflores
 [Treehouse: Ruby Foundations]: http://teamtreehouse.com/library/ruby-foundations
+[Treehouse: Sass Basics]: http://teamtreehouse.com/library/sass-basics
