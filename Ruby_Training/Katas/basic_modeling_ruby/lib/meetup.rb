@@ -1,23 +1,29 @@
-require_relative '../lib/attendee' #attendee.rb
+require 'attendee' #attendee.rb
 
 class Meetup
-  def meeting_time
-    @date
-  end
-
-  def meeting_time_of(meeting_time)
-    @date = meeting_time
+  def event_date
+    @eventdate
   end
 
   def location
-    @place
+    @location
   end
 
-  def location_of(location)
-    @place = location
+  def meeting_of(event_date, location)
+    @eventdate = event_date
+    @location = location
   end
 
   def initialize
     @attendee = Attendee.new
+    @attendees = Array.new
+  end
+
+  def rsvp(a_person)
+    @attendees.push(a_person)
+  end
+
+  def rsvp_number
+    @attendees.length
   end
 end

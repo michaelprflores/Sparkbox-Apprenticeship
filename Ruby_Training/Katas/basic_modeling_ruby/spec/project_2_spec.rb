@@ -1,41 +1,46 @@
 require 'rspec'
 require_relative '../lib/attendee' # attendee.rb
 require_relative '../lib/meetup' # meetup.rb
-require_relative '../lib/printing' # printing.rb
+require_relative '../lib/roster' # roster.rb
 
 describe Attendee do
-  it "has a first name" do
+  it "has a name and company" do
     attendee = Attendee.new
-    attendee.first_name_of("Frank")
-    attendee.first_name.should eq("Frank")
-  end
-
-  it "has a last name" do
-    attendee = Attendee.new
-    attendee.last_name_of("Castle")
-    attendee.last_name.should eq("Castle")
-  end
-
-  it "has a company" do
-    attendee = Attendee.new
-    attendee.name_of_company("Hoobastank")
-    attendee.company_name.should eq("Hoobastank")
+    attendee.profile("Frank Castle", "Punisher Inc.")
+    attendee.full_name.should eq("Frank Castle")
+    attendee.company_name.should eq("Punisher Inc.")
   end
 end
+
 # ----------------------------------------------------------------
+
 describe Meetup do
-  it "has a meeting time" do
+  it "has a meeting event date and location" do
     meetup = Meetup.new
-    meetup.meeting_time_of("July 4 2014")
-    meetup.meeting_time.should eq("July 4 2014")
+    meetup.meeting_of("July 4 2014","Flower St, CA")
+    meetup.event_date.should eq("July 4 2014")
+    meetup.location.should eq("Flower St, CA")
   end
 
-  it "has a location" do
+  it "RSVPs an attendee" do
     meetup = Meetup.new
-    meetup.location_of("California")
-    meetup.location.should eq("California")
+    meetup.rsvp Attendee.new
+    meetup.rsvp Attendee.new
+    meetup.rsvp_number.should eq(2)
   end
+end
 
-  it "has an attendee" do
+# ----------------------------------------------------------------
+
+describe Roster do
+  it "prints the RSVP list" do
+    meetup = Meetup.new
+    attendee1 = Attendee.new
+    attendee1.person("Matt Murdock","Daredevil Industries")
+    attendee2 = Attendee.new
+    attendee2.person("Steven Strange","Strange Orthopaedics")
+    meetup.rsvp attendee1
+    meetup.rsvp attendee2
+    meetup.print
   end
 end
