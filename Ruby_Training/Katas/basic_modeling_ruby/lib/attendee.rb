@@ -5,11 +5,11 @@ class Attendee
   # attendee.company_name = "Punisher LTE"
 
   def first_name # defines a new method
-    @firstname # this is an instance variable
+    @firstname # returns an instance variable
   end
   
-  def first_name_of(first_name) # defines a new method, passes in a value?
-    @firstname = first_name
+  def first_name_of(first_name) # defines a new method, passes in a value, which in this case is the method above
+    @firstname = first_name # sets the instance variable to equal first_name
   end
 
   def last_name
