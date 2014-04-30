@@ -26,4 +26,11 @@ class Meetup
   def rsvp_number
     @attendees.length
   end
+
+  def print
+    @attendees.each do |attendee| 
+      puts attendee.full_name
+      puts attendee.company_name
+    end
+  end
 end

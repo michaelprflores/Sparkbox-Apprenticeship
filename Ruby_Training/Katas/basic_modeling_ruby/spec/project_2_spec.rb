@@ -1,7 +1,6 @@
 require 'rspec'
 require_relative '../lib/attendee' # attendee.rb
 require_relative '../lib/meetup' # meetup.rb
-require_relative '../lib/roster' # roster.rb
 
 describe Attendee do
   it "has a name and company" do
@@ -28,17 +27,13 @@ describe Meetup do
     meetup.rsvp Attendee.new
     meetup.rsvp_number.should eq(2)
   end
-end
 
-# ----------------------------------------------------------------
-
-describe Roster do
   it "prints the RSVP list" do
     meetup = Meetup.new
     attendee1 = Attendee.new
-    attendee1.person("Matt Murdock","Daredevil Industries")
+    attendee1.profile("Matt Murdock","Daredevil Industries")
     attendee2 = Attendee.new
-    attendee2.person("Steven Strange","Strange Orthopaedics")
+    attendee2.profile("Steven Strange","Strange Orthopaedics")
     meetup.rsvp attendee1
     meetup.rsvp attendee2
     meetup.print
