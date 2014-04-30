@@ -359,7 +359,12 @@ footer > .logo img {
 
 @media (min-width:620px) {
     .content-container {
-    float: left;
+        float: left;
+        padding-right: 2em;
+    }
+
+    .content-list {
+        float: left;
     }
 
     .version .content-container:first-of-type {
