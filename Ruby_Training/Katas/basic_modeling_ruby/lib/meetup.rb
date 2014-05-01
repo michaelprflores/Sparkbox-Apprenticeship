@@ -1,4 +1,5 @@
-require 'attendee' #attendee.rb
+require 'attendee' # attendee.rb
+require 'print' # print.rb
 
 class Meetup
   def event_date
@@ -15,7 +16,6 @@ class Meetup
   end
 
   def initialize
-    @attendee = Attendee.new
     @attendees = Array.new
   end
 
@@ -27,10 +27,7 @@ class Meetup
     @attendees.length
   end
 
-  def print
-    @attendees.each do |attendee| 
-      puts attendee.full_name
-      puts attendee.company_name
-    end
+  def display_attendees
+    PrintMeetupsToTerminal.print(@attendees)
   end
 end

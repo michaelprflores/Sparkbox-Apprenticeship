@@ -1,6 +1,7 @@
 require 'rspec'
 require_relative '../lib/attendee' # attendee.rb
 require_relative '../lib/meetup' # meetup.rb
+require_relative '../lib/print' # print.rb
 
 describe Attendee do
   it "has a name and company" do
@@ -36,6 +37,6 @@ describe Meetup do
     attendee2.profile("Steven Strange","Strange Orthopaedics")
     meetup.rsvp attendee1
     meetup.rsvp attendee2
-    meetup.print
+    meetup.display_attendees
   end
 end
