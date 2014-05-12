@@ -1,4 +1,4 @@
-
+/*
 Sparkbox Apprentice Page
 written for - www.seesparkbox.com
 Version 2 is based on a 240px width instead of 400px
@@ -40,10 +40,6 @@ a {
     text-decoration: none;
 }
 
-/* a:visited {
-    color: #000;
-} */
-
 strong {
     font-weight: normal;
 }
@@ -59,7 +55,7 @@ header {
 }
 
 .head {
-    padding: 50px 0;
+    padding: 2em 0 4em 0;
 }
 
 .logo img {
@@ -78,7 +74,6 @@ h1.page-title {
     margin: 0.2em auto 0.2em auto;
     padding-bottom: 0.2em;
     text-transform: uppercase;
-    max-width: 16.438em;
 }
 
 .slogan {
@@ -116,6 +111,7 @@ h1.page-title {
 p.info-description {
     font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
     font-size: 1.3em;
+    text-align: center;
 }
 
 section.info {
@@ -146,6 +142,7 @@ p a {
 section p {
     font-family:"Bodoni W01 Book 709611";
     margin: 1em;
+    text-align: left;
 }
 
 section > a {
@@ -265,7 +262,7 @@ section {
 
 .version-1 {
     background-color: rgb(199, 225, 233);
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 .content-container {
@@ -350,7 +347,7 @@ footer > .logo img {
 
 @media (min-width: 515px) {
     h1.page-title {
-        width: 5.5em;
+        width: 70%;
     }
     .hr:before {
         width: 2.25%;
@@ -368,25 +365,67 @@ footer > .logo img {
         text-align: left;
         line-height: 1.5em;
     }
+
+    .version-job {
+        width: 100%;
+    }
     .version-number {
-        font-size: 5em;
+        font-size: 4em;
     }
     .version-current {
         margin-top: -2em;
     }
 }
 
+@media (min-width: 586px) {
+    h1.page-title {
+        width: 68%;
+}
+
 @media (min-width: 957px) {
-    .content-container {
-    width: 49%;
+    h1.page-title {
+        font-size: 9.8em;
+        max-width: 53%;
     }
+    .content-container {
+        width: 37%;
+    }
+    .version-number {
+        font-size: 9em;
+    }
+
+    .version-current {
+        font-size: 4.2em;
+        margin-top: -1.4em;
+    }
+}
+
+@media (min-width: 1110px) {
+    h1.page-title {
+        max-width: 46%;
+        font-size: 10.8em;
+    }
+}
+
+@media (min-width: 1420px) {
+    h1.page-title {
+        min-width: 46%;
+        font-size: 10.8em;
+    }
+}
+
+@media (min-width: 1600px) {
+    h1.page-title {
+        min-width: 46%;
+        font-size: 13.8em;
+    }
+}
 /*    .content-container:nth-of-type(2) {
         margin-left: -10%;
     }
     .content-container:nth-of-type(3) {
         margin-left: %;
     }*/
-}
 
 /*@media (min-width: 519px) {
     .version-3 .content-container:first-of-type {
