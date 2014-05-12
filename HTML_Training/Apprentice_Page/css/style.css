@@ -1,4 +1,4 @@
-/*
+
 Sparkbox Apprentice Page
 written for - www.seesparkbox.com
 Version 2 is based on a 240px width instead of 400px
@@ -24,6 +24,7 @@ Contents
 html, body {
     font-size: 16px;
     text-align: center;
+    margin: 0;
 }
 
 li {
@@ -221,13 +222,14 @@ section {
     padding-top: 0.4em;
     border-top: solid #FFF;
     position: relative;
+    margin: 0;
 }
 
 .version-project {
     font-family:"Bodoni W01 Book 709611";
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    padding-top: 3em;
+    padding-top: 2em;
 }
 
 .version-project-titles {
@@ -240,6 +242,7 @@ section {
     color: #000;
     line-height: 1em;
     padding: 0.5em 0 1em 0;
+    margin: 0;
 }
 
 .version-job {
@@ -267,12 +270,17 @@ section {
 
 .content-container {
     display:inline-block;
+    width: 100%;
 }
 
 /* end */
 
 /* 5. Social Links */
 
+.version-profile-social--links-list {
+    padding: 0;
+    margin: 0;
+}
 .version-profile-social--links-item {
     display: inline-block;
     margin: 0.8em 0.3em;
@@ -369,12 +377,15 @@ footer > .logo img {
 }
 
 @media (min-width: 957px) {
-    .content-container:nth-of-type(2) {
-        margin-left: -3%;
+    .content-container {
+    width: 49%;
+    }
+/*    .content-container:nth-of-type(2) {
+        margin-left: -10%;
     }
     .content-container:nth-of-type(3) {
-        margin-left: -3%;
-    }
+        margin-left: %;
+    }*/
 }
 
 /*@media (min-width: 519px) {
@@ -457,4 +468,4 @@ footer > .logo img {
 
 /* end */
 
-/* Think thru the modularity of the class names and maintainable names. We can get away with content driven class names for now funtion of the content */
+/* Think thru the modularity of the class names and maintainable names. We can get away with content driven class names for now funtion of the content 
