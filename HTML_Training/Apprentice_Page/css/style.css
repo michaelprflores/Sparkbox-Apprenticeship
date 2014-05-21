@@ -199,15 +199,6 @@ section {
     text-align: center;
 }
 
-/*.version h3:before {
-    content: "";
-    display: block;
-    border-bottom: 3px solid #FFF;
-    width: 100%;
-    position: absolute;
-    top: 0;
-}*/
-
 .version img {
     margin-bottom: -0.3em;
 }
@@ -226,7 +217,7 @@ section {
     font-family:"Bodoni W01 Book 709611";
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    padding-top: 2em;
+    padding: 3em 0 1em 0;
 }
 
 .version-project-titles {
