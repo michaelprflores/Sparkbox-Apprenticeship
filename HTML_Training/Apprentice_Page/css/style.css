@@ -199,6 +199,12 @@ section {
     text-align: center;
 }
 
+.grouped-container {
+    max-width: 65em;
+    background-color: blue;
+    margin: 0 auto;
+}
+
 .version-profile-wrapper:after {
     content: "";
     height: 3px;
