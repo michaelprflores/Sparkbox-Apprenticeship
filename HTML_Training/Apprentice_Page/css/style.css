@@ -201,14 +201,13 @@ section {
 
 .grouped-container {
     max-width: 65em;
-    background-color: blue;
     margin: 0 auto;
 }
 
 .version-profile-wrapper:after {
     content: "";
     height: 3px;
-    background-color: red;
+    background-color: #FFF;
     width: 100%;
     display: block;
     position: absolute;
