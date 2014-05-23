@@ -368,9 +368,12 @@ footer > .logo img {
         text-align: left;
         line-height: 1.5em;
     }
-
     .version-job {
         width: 100%;
+    }
+    
+    .version-job:nth-of-type(6) {
+        width: 63%;
     }
     .version-number {
         font-size: 4em;
