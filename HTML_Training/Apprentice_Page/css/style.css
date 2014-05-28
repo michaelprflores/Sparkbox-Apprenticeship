@@ -131,12 +131,9 @@ section.info {
 p a {
     text-decoration: underline;
 }
-.info a:hover {
-    color: #009bc2;
-}
 
-.info a:visited {
-    color: #4cacbe;
+.info a:hover {
+    color: #000;
 }
 
 section p {
@@ -155,6 +152,10 @@ section > a {
     width: 40%;
     margin: 40px auto;
     border-radius: 0.3em;
+}
+
+section > a:hover {
+    background-color: #787878;
 }
 
 /* end */
@@ -242,6 +243,7 @@ section {
     line-height: 1em;
     padding: 0.5em 0 1em 0;
     margin: 0;
+    letter-spacing: .03em;
 }
 
 .version-job {
@@ -271,6 +273,7 @@ section {
     display:inline-block;
     vertical-align: top;
     width: 100%;
+    margin-top: 3em;
 }
 
 /* end */
@@ -293,7 +296,32 @@ section {
     text-decoration: none;
 }
 
+.version-profile-social--links-item i:hover {
+    color: #FFF;
+    background-color: #000;
+}
+
 /* 6. Footer */
+
+footer a:hover {
+    color: #000;
+}
+
+footer > a {
+    background-color: #000;
+    color: #FFF;
+    font-family: "Bodoni W01 Bold Italic 709608", 'Times New Roman';
+    text-decoration: none;
+    padding: 1.2em 2.1em;
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    border-radius: 0.3em;
+}
+
+footer > a:hover {
+    background-color: #787878;
+}
 
 footer {
     background-color: rgb(255, 255, 255);
@@ -328,6 +356,15 @@ footer > .logo img {
     }
 }
 
+@media (min-width: 342px) {
+    .hr:before {
+        width: 3%;
+        top: 3.5em;
+        position: absolute;
+        margin-left:-1%;
+    }
+}
+
 @media (min-width: 360px) {
     h1.page-title {
         font-size: 6.8em;
@@ -335,15 +372,9 @@ footer > .logo img {
     }
     section > a {
         width: 160px;
-    }    
-}
-
-@media (min-width: 342px) {
-    .hr:before {
-        width: 3%;
-        top: 3.5em;
-        position: absolute;
-        margin-left:-1%;
+    }
+    footer > a {
+        width: 160px;
     }
 }
 
