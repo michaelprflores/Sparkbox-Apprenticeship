@@ -74,14 +74,14 @@ h1.page-title {
     margin: 0.2em auto 0.2em auto;
     padding-bottom: 0.2em;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .slogan {
     font-family: 'Bodoni W01 Book 709611', 'Times New Roman';
     letter-spacing: 0.175em;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: -35px;
+    margin-top: 1em 0 1em 0;
 }
 
 .slogan li {
@@ -112,6 +112,8 @@ p.info-description {
     font-family:"Bodoni W01 Bold Italic 709608", 'Times New Roman';
     font-size: 1.3em;
     text-align: center;
+    width: 33em;
+    margin-top: 2em;
 }
 
 section.info {
@@ -124,7 +126,7 @@ section.info {
     font-style: normal;
     font-size: 2.3em;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: 0.75em auto 0.5em auto;
     letter-spacing: .075em;
 }
 
@@ -198,6 +200,7 @@ section {
     font-size: 2.2em;
     margin-top: -1.85em;
     text-align: center;
+    letter-spacing: 0.05em;
 }
 
 .grouped-container {
@@ -368,7 +371,6 @@ footer > .logo img {
 @media (min-width: 360px) {
     h1.page-title {
         font-size: 6.8em;
-        width: 360px;
     }
     section > a {
         width: 160px;
@@ -393,7 +395,7 @@ footer > .logo img {
         text-align: center;
     }
     section p {
-        width: 483px;
+        width: 35em;
         margin: 0 auto;
         padding: 1em 0;
         text-align: left;
@@ -422,7 +424,6 @@ footer > .logo img {
 @media (min-width: 957px) {
     h1.page-title {
         font-size: 9.8em;
-        max-width: 53%;
     }
     .content-container {
         width: 33%;
@@ -439,7 +440,6 @@ footer > .logo img {
 
 @media (min-width: 1110px) {
     h1.page-title {
-        max-width: 46%;
         font-size: 10.8em;
     }
 }
