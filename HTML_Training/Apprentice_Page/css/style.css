@@ -61,7 +61,7 @@ header {
 .logo img {
     width: 30%;
     height: 100%;
-    margin-bottom: 1em;
+    margin: 1em;
 }
 
 h1.page-title {
@@ -166,7 +166,7 @@ section > a:hover {
 
 section {
     width: 100%;
-    margin: 2em auto;
+    margin: 2em auto 4em auto;
 }
 
 .version {
